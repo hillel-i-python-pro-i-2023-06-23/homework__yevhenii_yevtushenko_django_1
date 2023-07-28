@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Page</title>
+</head>
+<body>
+    <h1>Welcome! On this page you can generate users, emails, passwords:)</h1>
+    <a href="{% url 'generate_data:generate-user' 10 %}">Generate 10 Users</a>
+    <br>
+    <a href="{% url 'generate_data:generate-user' 25 %}">Generate 25 Users</a>
+    <br>
+    <a href="{% url 'generate_data:generate-user' 50 %}">Generate 50 Users</a>
+    <br>
+    <a href="{% url 'generate_data:generate-user' 100 %}">Generate 100 Users</a>
+    <br>
+    <pre>Or you can change users count, use 127.0.0.1:8000/YOUR_COUNT</pre>
+</body>
+</html>
