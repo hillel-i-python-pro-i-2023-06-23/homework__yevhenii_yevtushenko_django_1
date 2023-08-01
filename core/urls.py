@@ -21,4 +21,5 @@ from django.urls import path, include
 urlpatterns = [
     path("", include("apps.base.urls", namespace="base")),
     path("", include("apps.generate_data.urls", namespace="generate_data")),
+    path("contacts/", include("apps.contacts.urls", namespace="contacts")),
 ]

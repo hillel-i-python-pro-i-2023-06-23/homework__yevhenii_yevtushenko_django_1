@@ -42,9 +42,10 @@ Django_APPS = [
     "django.contrib.staticfiles",
 ]
 
-INSTALLED_APPS = Django_APPS
 
-LOCAL_APPS = ["apps.base", "apps.generate_data"]
+LOCAL_APPS = ["apps.base", "apps.generate_data", "apps.contacts"]
+
+INSTALLED_APPS = Django_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

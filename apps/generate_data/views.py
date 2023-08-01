@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from apps.generate_data.genetate_user import generate_users
+from apps.generate_data.generate_user import generate_users
 
 
 # Create your views here.
@@ -9,4 +9,4 @@ from apps.generate_data.genetate_user import generate_users
 def generate_user(request, users_count: int):
     users = generate_users(users_count)
 
-    return render(request, "generate_user.html", {"users": users})
+    return render(request, "generate_users/generate_user.html", {"users": users})

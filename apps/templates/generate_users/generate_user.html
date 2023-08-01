@@ -1,0 +1,16 @@
+{% extends "_helpers/_base.html" %}
+
+{% block content %}
+    <h1>Generated users:</h1>
+    <ol>
+        {% for user in users %}
+            <li>
+                <span>{{ user.name }}</span>
+                <span> - </span>
+                <span>{{ user.email }}</span>
+                <span> - </span>
+                <span>{{ user.Password }}</span>
+            </li>
+        {% endfor %}
+    </ol>
+{% endblock %}

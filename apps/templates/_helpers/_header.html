@@ -1,0 +1,24 @@
+<header>
+    <div>Logo</div>
+
+
+    <ul>
+        <li>
+            <a href="{% url 'base:home_page' %}">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'generate_data:generate-user' 10 %}">
+                Generate 10 users
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'contacts:contacts_list' %}">
+                Show Contacts
+            </a>
+        </li>
+
+
+    </ul>
+</header>

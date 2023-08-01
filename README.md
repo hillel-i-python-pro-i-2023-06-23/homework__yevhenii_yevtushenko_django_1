@@ -3,7 +3,7 @@
 ---
 ![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/homework__yevhenii_yevtushenko_django_1/actions/workflows/main-workflow.yml/badge.svg)
 
-## 🏠 Homework_9_flask_sqlite
+## 🏠 Homework_Django
 
 Homework related actions.
 
