@@ -2,6 +2,18 @@
 
 {% block content %}
     <h1>Contacts:</h1>
-
+<div>
+    <a href="{% url 'contacts:contacts_create' %}">
+        <button>Create</button>
+    </a>
+    <a href="{% url 'contacts:generate_contacts' %}">
+        <button>Generate contacts</button>
+        <br>
+    </a>
+</div>
     {% include "contacts/_contacts_list_base.html" with contacts_list=object_list %}
+    </a>
+    <a href="{% url 'contacts:delete_all' %}">
+        <button>Delete all contacts</button>
+    </a>
 {% endblock %}

@@ -1,7 +1,6 @@
 <div>
-    <a href="{% url 'contacts:contacts_create' %}">
-        <button>Create</button>
-    </a>
+
+
 </div>
 
 <ol>
@@ -22,6 +21,9 @@
 
                     <a href="{% url 'contacts:contacts_delete' contact.pk %}">
                         <button>Delete</button>
+                    </a>
+                    <a href="{% url 'contacts:contacts_update' contact.pk %}">
+                        <button>Update</button>
                     </a>
 
                 </div>
